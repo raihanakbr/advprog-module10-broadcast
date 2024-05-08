@@ -11,3 +11,10 @@ To run, just run `cargo run --bin <file_name>`. When I type some text in a clien
 ## 2.2 Modifying the websocket port
 ![](https://media.discordapp.net/attachments/1054028087551078452/1237680441436274698/image.png?ex=663c873c&is=663b35bc&hm=fea3c1f7b1d6480b6d9833206d0d814ee1df8fd9005134c1a2fc814814723994&=&format=webp&quality=lossless&width=1176&height=226)
 Other than the client.rs file, I also changed the port in server.rs file, specifically in line 43 and 45. The protocol in server.rs file is different from the client.rs where client.rs uses a websocket, while server.rs uses a TCP protocol.
+
+## 2.3 Small changes. Add some information to client
+![](https://media.discordapp.net/attachments/1054028087551078452/1237682715415941163/image.png?ex=663c895a&is=663b37da&hm=3cb66f11345dce0e6a294c2c168c84acc5548a9dd453953552b2a3e6629f8e02&=&format=webp&quality=lossless&width=1197&height=343)
+![](https://media.discordapp.net/attachments/1054028087551078452/1237682737314271303/image.png?ex=663c895f&is=663b37df&hm=7b7a0dc35dfe7ac09e2d7569eb58fb598a5bc0c8d096d002ca010f200d8576a2&=&format=webp&quality=lossless&width=687&height=172)
+![](https://media.discordapp.net/attachments/1054028087551078452/1237682773121175583/image.png?ex=663c8968&is=663b37e8&hm=0ea00ea7d8556b81364d744ac50c1917fdd81b5689981ba701e9ec9d47abc49b&=&format=webp&quality=lossless&width=687&height=192)
+![](https://media.discordapp.net/attachments/1054028087551078452/1237682811935391764/image.png?ex=663c8971&is=663b37f1&hm=6a54bcc87f5147c3d958c02091537b29cc136ae4543e3dd72c8c94e2af55960e&=&format=webp&quality=lossless&width=687&height=191)
+I added some information to the client where they will send message not only the text, but with their address as well. On the other hand, I added `Ian's Computer` to the server to give more information.
