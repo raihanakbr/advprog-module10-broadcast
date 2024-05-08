@@ -7,3 +7,7 @@
 ![](https://media.discordapp.net/attachments/1054028087551078452/1237674795806752818/image.png?ex=663c81fa&is=663b307a&hm=8e05c102731bcfe250713dce51a0f1452a1c38826ad5bc198c2cb3192c5dee79&=&format=webp&quality=lossless&width=972&height=285)
 <br>
 To run, just run `cargo run --bin <file_name>`. When I type some text in a client, the text will also be sent to other clients and server.
+
+## 2.2 Modifying the websocket port
+![](https://media.discordapp.net/attachments/1054028087551078452/1237680441436274698/image.png?ex=663c873c&is=663b35bc&hm=fea3c1f7b1d6480b6d9833206d0d814ee1df8fd9005134c1a2fc814814723994&=&format=webp&quality=lossless&width=1176&height=226)
+Other than the client.rs file, I also changed the port in server.rs file, specifically in line 43 and 45. The protocol in server.rs file is different from the client.rs where client.rs uses a websocket, while server.rs uses a TCP protocol.
